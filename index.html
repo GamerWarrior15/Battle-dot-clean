@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Battle Royale Dot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div id="ui">
+        <div id="menu">
+            <h1>BATTLE DOT</h1>
+            <input type="text" id="pseudo" placeholder="Pseudo..." maxlength="10">
+            <button onclick="rejoindre()">Jouer</button>
+        </div>
+        <div id="scoreboard" style="display:none">
+            <h3>Classement</h3>
+            <ul id="list"></ul>
+        </div>
+    </div>
+    <canvas id="game"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
